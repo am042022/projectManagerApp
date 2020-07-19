@@ -1,0 +1,96 @@
+.headerTitle{
+    color: white;
+    font-size: 111px;
+}
+
+.headerSub{
+    color: white;
+    font-size: 34px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+input::placeholder{
+    color: white;
+    display: block;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    opacity: 41%;
+    font-size: 24px;
+}
+input[type=text]{
+    display: block;
+    background-color: #383838;
+    border-color: #5D5B5B;
+    outline: none;
+    color: white;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    opacity: 82%;
+    font-size: 24px;
+    border-style: solid;
+    border-radius: 40pt;
+    border-width: .5px;
+    padding-left: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 60%;
+}
+
+textarea {
+    background-color: #383838;
+    border-color: #5D5B5B;
+    outline: none;
+    color: white;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    opacity: 82%;
+    font-size: 24px;
+    border-style: solid;
+    border-radius: 20pt;
+    border-width: .5px;
+    padding-left: 25px;
+    padding-top: 10px;
+    width: 45%;
+    resize: none;
+}
+
+input[type=button]{
+    outline: none;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'helvetica neue';
+    width: 12%;
+    padding: 10px 13px 10px 13px;
+    border-radius: 40px;
+    margin-bottom: 15px;
+}
+
+input[name='pGithubLink']{
+    background: linear-gradient( to top, #FF7F00, #FF0000);
+    transition-duration: 2s;
+    z-index: 1;
+}
+
+input[name='pGitubLink']::before{
+    background: linear-gradient( to bottom, #FF7F00, #FF0000);
+    opacity: 0;
+    transition: opacity 2s linear;
+    z-index: -1;
+}
+input[name='pGithubLink']:hover::before{
+    opacity: 1;
+}
+
+input[name='pFileLocation']{
+    background: linear-gradient(#9D00FF, #00C4FF);
+}
+
+input[name='pCreate']{
+    background: linear-gradient(#00D7EA, #00FF27);
+}
